@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import {
     BarChart, Bar, LineChart, Line, XAxis, YAxis, Tooltip,
-    ResponsiveContainer, CartesianGrid, Legend,
+    ResponsiveContainer, CartesianGrid, Legend, PieChart, Pie, Cell, Sector
 } from 'recharts'
 import { Loader2 } from 'lucide-react'
 import { useBudgetLines } from '../hooks/useBudgetLines'
@@ -12,6 +12,21 @@ const PILLAR_SHORT = {
     'Democratic Governance and Human Rights': 'Democracy',
     'Strengthening Communities': 'Communities',
     'Operations': 'Operations',
+    'Supporting CSOs': 'CSOs (Grants)'
+}
+
+const COLORS = ['#16a34a', '#22c55e', '#4ade80', '#86efac', '#bbf7d0', '#15803d', '#166534']
+
+const renderActiveShape = (props) => {
+    const { cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill, payload, percent } = props
+    return (
+        <g>
+            <text x={cx} y={cy - 12} textAnchor="middle" fill="#111827" fontSize={16} fontWeight={700}>{payload.name}</text>
+            <text x={cx} y={cy + 8} textAnchor="middle" fill="#6b7280" fontSize={12}>{(percent * 100).toFixed(1)}%</text>
+            <Sector cx={cx} cy={cy} innerRadius={innerRadius} outerRadius={outerRadius + 8} startAngle={startAngle} endAngle={endAngle} fill={fill} />
+            <Sector cx={cx} cy={cy} innerRadius={innerRadius - 6} outerRadius={innerRadius - 2} startAngle={startAngle} endAngle={endAngle} fill={fill} />
+        </g>
+    )
 }
 
 const CustomTooltip = ({ active, payload, label }) => {
@@ -59,6 +74,19 @@ export default function Analytics({ fundingFilter }) {
         return Object.values(map)
     }, [filtered])
 
+    const donutData = useMemo(() => {
+        const map = {}
+        filtered.forEach(({ fundingSource, totalCost, spent }) => {
+            const rem = totalCost - (spent || 0)
+            if (rem > 0) {
+                map[fundingSource] = (map[fundingSource] || 0) + rem
+            }
+        })
+        return Object.entries(map).map(([name, value]) => ({ name, value }))
+    }, [filtered])
+
+    const [activePieIndex, setActivePieIndex] = React.useState(0)
+
     const top5 = useMemo(() =>
         [...filtered].sort((a, b) => b.totalCost - a.totalCost).slice(0, 5),
         [filtered]
@@ -103,29 +131,47 @@ export default function Analytics({ fundingFilter }) {
                 </ResponsiveContainer>
             </div>
 
-            {/* Top 5 */}
-            <div className="bg-white rounded-2xl p-5 shadow-card border border-gray-100">
-                <h2 className="text-sm font-semibold text-gray-700 mb-4">Top 5 Activities by Budget Allocation</h2>
-                <div className="space-y-3">
-                    {top5.map((line, i) => {
-                        const pct = top5[0].totalCost > 0 ? (line.totalCost / top5[0].totalCost) * 100 : 0
-                        return (
-                            <div key={line.id} className="flex items-center gap-3">
-                                <span className="w-5 text-xs font-bold text-gray-400 text-right">{i + 1}</span>
-                                <div className="flex-1">
-                                    <div className="flex justify-between text-xs mb-0.5">
-                                        <span className="font-medium text-gray-700 truncate max-w-[60%]">{line.activity}</span>
-                                        <span className="font-bold text-gray-800">{formatZMW(line.totalCost)}</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {/* Donut Chart */}
+                <div className="bg-white rounded-2xl p-5 shadow-card border border-gray-100 flex flex-col">
+                    <h2 className="text-sm font-semibold text-gray-700 mb-4">Remaining Budget Distribution</h2>
+                    <div className="flex-1 flex items-center justify-center">
+                        <ResponsiveContainer width="100%" height={260}>
+                            <PieChart>
+                                <Pie data={donutData} cx="50%" cy="50%" innerRadius={70} outerRadius={100} dataKey="value"
+                                    activeIndex={activePieIndex} activeShape={renderActiveShape}
+                                    onMouseEnter={(_, idx) => setActivePieIndex(idx)}>
+                                    {donutData.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
+                                </Pie>
+                            </PieChart>
+                        </ResponsiveContainer>
+                    </div>
+                </div>
+
+                {/* Top 5 */}
+                <div className="bg-white rounded-2xl p-5 shadow-card border border-gray-100">
+                    <h2 className="text-sm font-semibold text-gray-700 mb-4">Top 5 Activities by Budget Allocation</h2>
+                    <div className="space-y-3">
+                        {top5.map((line, i) => {
+                            const pct = top5[0].totalCost > 0 ? (line.totalCost / top5[0].totalCost) * 100 : 0
+                            return (
+                                <div key={line.id} className="flex items-center gap-3">
+                                    <span className="w-5 text-xs font-bold text-gray-400 text-right">{i + 1}</span>
+                                    <div className="flex-1">
+                                        <div className="flex justify-between text-xs mb-0.5">
+                                            <span className="font-medium text-gray-700 truncate max-w-[60%]">{line.activity}</span>
+                                            <span className="font-bold text-gray-800">{formatZMW(line.totalCost)}</span>
+                                        </div>
+                                        <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                                            <div className="h-full bg-gradient-to-r from-primary-400 to-primary-600 rounded-full"
+                                                style={{ width: `${pct}%` }} />
+                                        </div>
+                                        <p className="text-[10px] text-gray-400 mt-0.5">{line.fundingSource} · {line.strategicPillar}</p>
                                     </div>
-                                    <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                                        <div className="h-full bg-gradient-to-r from-primary-400 to-primary-600 rounded-full"
-                                            style={{ width: `${pct}%` }} />
-                                    </div>
-                                    <p className="text-[10px] text-gray-400 mt-0.5">{line.fundingSource} · {line.strategicPillar}</p>
                                 </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </div>

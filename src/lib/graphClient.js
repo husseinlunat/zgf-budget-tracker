@@ -34,9 +34,6 @@ export function getMsalInstance() {
     return _msalInstance
 }
 
-/**
- * Acquire a Graph API access token silently, falling back to popup.
- */
 export async function acquireToken() {
     const msal = getMsalInstance()
     if (!msal) throw new Error('MSAL not configured. Set VITE_GRAPH_CLIENT_ID and VITE_GRAPH_TENANT_ID.')
@@ -47,15 +44,23 @@ export async function acquireToken() {
     const request = { scopes: GRAPH_SCOPES, account: accounts[0] }
 
     try {
+        if (!accounts || accounts.length === 0) {
+            // No account found, trigger popup immediately
+            throw new Error("no_account")
+        }
         const result = await msal.acquireTokenSilent(request)
         return result.accessToken
     } catch (err) {
-        if (err instanceof InteractionRequiredAuthError) {
-            // Silent failed — fallback to popup
-            const result = await msal.acquireTokenPopup({ scopes: GRAPH_SCOPES })
-            return result.accessToken
+        // If MSAL gets stuck in 'interaction_in_progress', clear the cache so it can recover
+        if (err.errorCode === 'interaction_in_progress') {
+            console.warn("MSAL interaction stuck. Clearing session storage and retrying...")
+            sessionStorage.clear()
         }
-        throw err
+
+        // Fall back to popup if silent acquisition fails for ANY reason (no account, interaction required, etc)
+        console.log("Silent token acquisition failed, attempting popup...", err)
+        const result = await msal.acquireTokenPopup({ scopes: GRAPH_SCOPES })
+        return result.accessToken
     }
 }
 

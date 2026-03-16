@@ -52,16 +52,20 @@ export default function PaymentRequests({ fundingFilter }) {
         setSyncing(true)
         setSyncResult(null)
         try {
-            if (isSharePointConfigured && isSupabaseConfigured) {
+            console.log("Starting sync. isSharePointConfigured:", isSharePointConfigured, "isSupabaseConfigured:", isSupabaseConfigured)
+            if (isSharePointConfigured) {
                 const result = await syncFromSharePoint()
                 setSyncResult({ ok: true, message: `✓ Synced ${result.synced} items. ${result.approved} approvals deducted from budget.` })
-                await refetch()
+                if (isSupabaseConfigured) {
+                    await refetch()
+                }
             } else {
                 // Simulate sync in demo mode
                 await new Promise((r) => setTimeout(r, 1500))
-                setSyncResult({ ok: false, message: 'Demo mode — configure SharePoint + Supabase env vars to sync live data.' })
+                setSyncResult({ ok: false, message: 'Demo mode — configure SharePoint env vars to sync live data.' })
             }
         } catch (err) {
+            console.error("Sync failed heavily:", err)
             setSyncResult({ ok: false, message: `Sync failed: ${err.message}` })
         } finally {
             setSyncing(false)
@@ -142,7 +146,7 @@ export default function PaymentRequests({ fundingFilter }) {
                     <table className="w-full">
                         <thead>
                             <tr className="border-b border-gray-100">
-                                {['Item ID', 'Name', 'Budget Code', 'Budget Line', 'Year', 'Amount', 'Requested By', 'Date', 'Status'].map((h) => (
+                                {['Item ID', 'Name', 'Budget Code', 'Funding Source', 'Year', 'Amount', 'Requested By', 'Date', 'Status'].map((h) => (
                                     <th key={h} className="table-th">{h}</th>
                                 ))}
                             </tr>
@@ -156,7 +160,7 @@ export default function PaymentRequests({ fundingFilter }) {
                                         <td className="table-td font-mono text-xs text-primary-700 font-semibold">{req.id}</td>
                                         <td className="table-td font-medium max-w-[180px]"><p className="truncate">{req.name}</p></td>
                                         <td className="table-td font-mono text-xs text-gray-500">{req.budgetCode}</td>
-                                        <td className="table-td text-xs text-gray-500 max-w-[140px]"><p className="truncate">{line?.activity || req.budgetLineId || '—'}</p></td>
+                                        <td className="table-td text-xs text-gray-500 max-w-[140px]"><p className="truncate">{req.fundingSource || '—'}</p></td>
                                         <td className="table-td">{req.year}</td>
                                         <td className="table-td font-semibold text-gray-800">{formatZMW(req.amount)}</td>
                                         <td className="table-td text-gray-500">{req.requestedBy}</td>
@@ -185,7 +189,7 @@ export default function PaymentRequests({ fundingFilter }) {
                         <div className="mt-4 space-y-2 text-sm">
                             {[
                                 ['Budget Code', info.budgetCode],
-                                ['Budget Line', lineMap[info.budgetLineId]?.activity || info.budgetLineId || '—'],
+                                ['Funding Source', info.fundingSource || '—'],
                                 ['Year', info.year],
                                 ['Amount', formatZMW(info.amount)],
                                 ['Requested By', info.requestedBy],

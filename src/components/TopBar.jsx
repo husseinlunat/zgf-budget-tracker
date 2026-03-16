@@ -11,13 +11,13 @@ export default function TopBar({ title, fundingFilter, setFundingFilter, onSync,
             <div className="flex items-center gap-3">
                 {/* Funding Source Filter */}
                 <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-0.5">
-                    {['All', 'KaluluII', 'ZGF'].map((src) => (
+                    {['All', 'Comic Relief', 'MOTTIII', 'KaluluII', 'ZGF'].map((src) => (
                         <button
                             key={src}
                             onClick={() => setFundingFilter(src)}
                             className={`px-3 py-1 rounded-md text-xs font-medium transition-all duration-150 ${fundingFilter === src
-                                    ? 'bg-white text-primary-700 shadow-sm font-semibold'
-                                    : 'text-gray-500 hover:text-gray-700'
+                                ? 'bg-white text-primary-700 shadow-sm font-semibold'
+                                : 'text-gray-500 hover:text-gray-700'
                                 }`}
                         >
                             {src}
