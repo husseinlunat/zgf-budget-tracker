@@ -1,5 +1,1133 @@
 [
   {
+    "id": "PR-3117",
+    "name": "Enlight_First Disburssment_8495_527",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 749500.0,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "ENLIGHT ABILITIES ORGANISATION",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3116",
+    "name": "Agents of Change_First Disbursement_8495_525",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 673804.09,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "AGENTS OF CHANGE LIMITED",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3115",
+    "name": "Choma_DP_First Disbursement_8495_526",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 684381.03,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "BIC-CHOMA CHILDREN DEVELOPMENT PROJECT",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3114",
+    "name": "Liseli Initiative_First Disbursement_8495_530",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 628813.34,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "LISELI INITIATIVE",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3113",
+    "name": "MCZ_First Disbursement_8495_534",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 671843.27,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "MIRACLE CORNERS ZAMBIA",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3112",
+    "name": "PRISCCA_First Disbursement_8494_534",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 748870.0,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Prisons Care and Counselling Association",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3111",
+    "name": "Tubombelepamo_First Disbursement_8495_537",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 647051.9,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "TUBOMBELEPAMO COMMUNITY SUPPORT ORGANISATION",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3110",
+    "name": "Kochebuka_First Disbursement_8495_528",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 675000.84,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Kocebuka Community Foundation",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3109",
+    "name": "VWI_First Disbursement_8495_538_",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 693400.0,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Visionary Women Initiative ",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3108",
+    "name": "Life Initiative_First Disbursement_8495_529",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 737900.0,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Life Initiative",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3107",
+    "name": "ReachAll_First Disbursement_",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 737538.85,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Reach All",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3106",
+    "name": "Maternal Health Action_First Disbursement _8495_531",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 750000.0,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Maternal Health Action",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3105",
+    "name": "vehicle road tax",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 1845.0,
+    "requested_by": "Khondwani Chibunga",
+    "payee": "Khondwani Chibunga;#59",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3103",
+    "name": "26% Lunch Contributions/ March",
+    "budget_code": "4.1.4",
+    "year": 2026,
+    "amount": 4500.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "",
+    "funding_source": "ZGF",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3102",
+    "name": "Reverse Call for Proposals Reflection Meeting",
+    "budget_code": "3.12.5",
+    "year": 2026,
+    "amount": 6330.0,
+    "requested_by": "Pauline Katebe",
+    "payee": "Jack Kalipenta;#24",
+    "funding_source": "Mott",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3101",
+    "name": "74% Lunch Contribution/ March",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 13050.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3100",
+    "name": "Professional Recruitment Fees for Head of Programs ",
+    "budget_code": "1.2",
+    "year": 2026,
+    "amount": 51151.3,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Career Prsopect Limited",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3099",
+    "name": "NAPSA contribution - March",
+    "budget_code": "Operations",
+    "year": 2026,
+    "amount": 45423.6,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "NAPSA",
+    "funding_source": "ZGF",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3098",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 31531.13,
+    "requested_by": "Noah Kalaba",
+    "payee": "Bonaventure Mulenga ",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3097",
+    "name": "Green Living M_8495_511 Second disbursement March 2026",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 548242.18,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Green Living Movement",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3096",
+    "name": "5 Refills of Gas payment",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 3150.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Vivo Gas and Cryogenics",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3095",
+    "name": "Accommodation/ CBU Team traveling to Ghana",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 6000.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "BroadLeaf Apartments",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3094",
+    "name": "Vehicle Hire/ Visiting CSOs in Lusaka",
+    "budget_code": "1.3.1",
+    "year": 2026,
+    "amount": 4000.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Chostho Car Hire",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3092",
+    "name": "RCZ_8495_510_ Second Disbursement _March 2026",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 621636.57,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "RCZ Diaconia",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3091",
+    "name": "Board Fees/ Combined Committee and Board Meeting",
+    "budget_code": "4.2",
+    "year": 2026,
+    "amount": 17500.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Board Members",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3090",
+    "name": "Board Fees - Grants Committee",
+    "budget_code": "4.2",
+    "year": 2026,
+    "amount": 7500.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Board Members",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3089",
+    "name": "Dish Washing Liquid/ 25litres",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 1566.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "A&P International Limited",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3088",
+    "name": "PFF_Second Disbursement_ 8495_512_March 2026",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 474139.66,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Prisoners Future Foundation",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3086",
+    "name": "STP Ghana ",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 1980.0,
+    "requested_by": "Taonga Nyirongo",
+    "payee": "Taonga Nyirongo;#284",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3085",
+    "name": "STP Ghana Debate ",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 20000.0,
+    "requested_by": "Taonga Nyirongo",
+    "payee": "Alisa Hotel",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3084",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 37536.0,
+    "requested_by": "Noah Kalaba",
+    "payee": "Alice Sayi",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3083",
+    "name": "Climate Protection_8495_507_ Second Disbursement 2026",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 476269.0,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Climate Protection Zambia",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3082",
+    "name": "Flights to Ghana - 10 people",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 242400.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Blueberry Travels",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3081",
+    "name": "Refunds/ Shirts and Chitenges - STP Debate Ghana",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 9573.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Taonga Nyirongo;#284",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3079",
+    "name": "APN Board Meeting/ Per Diem",
+    "budget_code": "1.5.1",
+    "year": 2026,
+    "amount": 1000.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Engwase Mwale;#208",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3078",
+    "name": "Transfer - MOTT III staff time/March",
+    "budget_code": "Operations",
+    "year": 2026,
+    "amount": 114188.75,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "IZB Corporate",
+    "funding_source": "MOTT $",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3077",
+    "name": "Transfer - Kalulu staff time charges/March",
+    "budget_code": "Operations",
+    "year": 2026,
+    "amount": 112789.68,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "IZB Corporate",
+    "funding_source": "Kalulu $",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3076",
+    "name": "Bus fare for CBU team",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 6000.0,
+    "requested_by": "Fatima Mawele",
+    "payee": "Fatima Mawele;#63",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3075",
+    "name": "Entrepreneurship training- Mphuka Community Foundation ",
+    "budget_code": "2.2.2",
+    "year": 2026,
+    "amount": 30110.0,
+    "requested_by": "Happiness Moyo",
+    "payee": "Happiness Moyo;#43",
+    "funding_source": "Mott",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3074",
+    "name": "Transfer - Staff time charges/March",
+    "budget_code": "Operations",
+    "year": 2026,
+    "amount": 482909.0,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "IZB Corporate",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3073",
+    "name": "Air ticket/ APN Board orientation and Board meeting",
+    "budget_code": "1.5.1",
+    "year": 2026,
+    "amount": 20290.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Krishna Travels",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3072",
+    "name": "STP Ghana Debate",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 65000.0,
+    "requested_by": "Fatima Mawele",
+    "payee": "Alisa Hotel Ghana",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3071",
+    "name": "Quality assurance visits - OS plan implementation",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 24560.0,
+    "requested_by": "Noah Kalaba",
+    "payee": "Kapaya Cholwe;#121",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3070",
+    "name": "Facilitation of Mental Health Talk",
+    "budget_code": "1.4.2",
+    "year": 2026,
+    "amount": 5000.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Nayoto Akashabatwa",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3067",
+    "name": "Vehicle Hire - Mott Documentary Filming",
+    "budget_code": "3.12.5",
+    "year": 2026,
+    "amount": 14000.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Sithma Car Hire",
+    "funding_source": "Mott",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3066",
+    "name": "Staff Team Building",
+    "budget_code": "1.4.2",
+    "year": 2026,
+    "amount": 53043.48,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Vaima Talent Management Centre",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3065",
+    "name": "PAP evaluation  - Stp institution Capacity building",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 10000.0,
+    "requested_by": "Noah Kalaba",
+    "payee": "Chilufya Chileshe",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3063",
+    "name": "Disability Training - ZGF Staff",
+    "budget_code": "4.2",
+    "year": 2026,
+    "amount": 22500.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Musola Catherine Kaseketi",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3062",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 28295.65,
+    "requested_by": "Noah Kalaba",
+    "payee": "Felix Chiteule",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3060",
+    "name": "New battery - Ford Ranger",
+    "budget_code": "Operations",
+    "year": 2026,
+    "amount": 3777.0,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "Diesel Electric",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3059",
+    "name": "PAP evaluation  - Stp institution Capacity building",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 10000.0,
+    "requested_by": "Noah Kalaba",
+    "payee": "Lumba Siyanga",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3058",
+    "name": "STP debates in Ghana",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 1000.0,
+    "requested_by": "Fatima Mawele",
+    "payee": "Racheal Mwila;#23",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3057",
+    "name": "RMI - data collection",
+    "budget_code": "1.3.1",
+    "year": 2026,
+    "amount": 117690.0,
+    "requested_by": "Noah Kalaba",
+    "payee": "Noah Kalaba;#162;#Pauline Katebe;#64",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3056",
+    "name": "Lusaka Learning meeting",
+    "budget_code": "1.5.1",
+    "year": 2026,
+    "amount": 5056.4,
+    "requested_by": "Aseli Kunda",
+    "payee": "Aseli Kunda;#61",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3055",
+    "name": "STP Debates in Ghana",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 1000.0,
+    "requested_by": "Fatima Mawele",
+    "payee": "Taonga Nyirongo;#284",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3054",
+    "name": "STP Debates in Ghana",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 1000.0,
+    "requested_by": "Fatima Mawele",
+    "payee": "Fatima Mawele;#63",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3053",
+    "name": "PAP evaluation  - Stp institution Capacity building",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 10000.0,
+    "requested_by": "Noah Kalaba",
+    "payee": "Kelvin Munsongo",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3052",
+    "name": "PAP evaluation  - Stp institution Capacity building",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 10000.0,
+    "requested_by": "Noah Kalaba",
+    "payee": "Dr Emma Sitambuli",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3051",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 33476.17,
+    "requested_by": "Noah Kalaba",
+    "payee": "Joseph Kakoma",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3050",
+    "name": "Board Fees/ Nominations Committee",
+    "budget_code": "4.2",
+    "year": 2026,
+    "amount": 5000.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Board Members",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3049",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 50557.57,
+    "requested_by": "Noah Kalaba",
+    "payee": "Gerard Chalila",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3047",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 34565.22,
+    "requested_by": "Noah Kalaba",
+    "payee": "Tandwa Syakayuwa",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3046",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 53487.65,
+    "requested_by": "Noah Kalaba",
+    "payee": "Ketty Simasiku",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3045",
+    "name": "Development_profile_Envir_studies_asset_Mapping_Mar2026",
+    "budget_code": "2.2.3",
+    "year": 2026,
+    "amount": 37678.0,
+    "requested_by": "Sarah Haloba",
+    "payee": "Mirriam  Sikalume;#310",
+    "funding_source": "Mott",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3044",
+    "name": "SG Workshop_Capacity Building on Record Keeping",
+    "budget_code": "2.9.1",
+    "year": 2026,
+    "amount": 34410.0,
+    "requested_by": "Pauline Katebe",
+    "payee": "Jack Kalipenta;#24",
+    "funding_source": "Mott",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3043",
+    "name": "Orientation on Microgrant with Shortlisted CF and SG",
+    "budget_code": "2.1.3",
+    "year": 2026,
+    "amount": 55250.0,
+    "requested_by": "Pauline Katebe",
+    "payee": "Pauline Katebe",
+    "funding_source": "Sharetrust",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3042",
+    "name": "Staff Medical Bill/ February",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 2806.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Coptic Hospital",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/02/2026"
+  },
+  {
+    "id": "PR-3041",
+    "name": "Transport - Staff Team Building",
+    "budget_code": "1.4.2",
+    "year": 2026,
+    "amount": 16000.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Yamikani Car Hire",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3040",
+    "name": "Data Collection Maturity Savings Group",
+    "budget_code": "2.1.3",
+    "year": 2026,
+    "amount": 17500.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Chisotho Trading",
+    "funding_source": "Sharetrust",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3039",
+    "name": "Transfer - CR Operational funds/Feb",
+    "budget_code": "Operations",
+    "year": 2026,
+    "amount": 2400000.0,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "Comic Relief",
+    "funding_source": "LOOP",
+    "status": "Approved",
+    "date": "01/02/2026"
+  },
+  {
+    "id": "PR-3038",
+    "name": "Transfer - MOTT Operational funds/Feb",
+    "budget_code": "Operations",
+    "year": 2026,
+    "amount": 750000.0,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "MOTT ZMW",
+    "funding_source": "MOTT $",
+    "status": "Approved",
+    "date": "01/02/2026"
+  },
+  {
+    "id": "PR-3037",
+    "name": "Mirriam Sikalume- ICTAZ Annual membership subscription",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 2000.0,
+    "requested_by": "Mirriam  Sikalume",
+    "payee": "ICTAZ",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3036",
+    "name": "Second Disbursement_2026_ Lewanika Community _8495_420",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 358400.0,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Lewanika Community Care and Support Programme",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3035",
+    "name": "Communtiy Foundations Performance Assessment",
+    "budget_code": "2.11.1",
+    "year": 2026,
+    "amount": 25050.0,
+    "requested_by": "Kapaya Cholwe",
+    "payee": "Kapaya Cholwe",
+    "funding_source": "Mott",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3034",
+    "name": "Healing Balm Second_2026_Disbursement _8495_428",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 507713.88,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Healing Balm",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3033",
+    "name": "Auditors CSSF Partners Visit_16_Mar_26",
+    "budget_code": "1.1.2",
+    "year": 2026,
+    "amount": 28940.0,
+    "requested_by": "Malenga Ngwenya",
+    "payee": "Eddie Simfukwe",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3032",
+    "name": "Airtime Allowance - CEO March 2026",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 200.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Engwase B. Mwale",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3031",
+    "name": "Fuel replenishment - CEO/March",
+    "budget_code": "4.1.4",
+    "year": 2026,
+    "amount": 3434.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Total Energies",
+    "funding_source": "ZGF",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3030",
+    "name": "Lunch/ Board Chair with Founders",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 4000.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Beatrice Grillo",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3029",
+    "name": "Participation in the Financial Literacy week  ",
+    "budget_code": "2.1.2",
+    "year": 2026,
+    "amount": 19200.0,
+    "requested_by": "Happiness Moyo",
+    "payee": "Happiness Moyo;#43",
+    "funding_source": "Kalulu",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3027",
+    "name": "Pump Repair",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 700.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Abigail Chirwa",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3026",
+    "name": "Servicing of the Hilux",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 11599.03,
+    "requested_by": "Abigail Chirwa",
+    "payee": "CFAO Mobility",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3025",
+    "name": "Perdiem - Staff team building/Chisamba",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 15420.0,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "Taonga Nyirongo",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3024",
+    "name": "PAYE & SDL/February",
+    "budget_code": "5.3.1",
+    "year": 2026,
+    "amount": 184482.16,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "ZRA",
+    "funding_source": "ZGF",
+    "status": "Approved",
+    "date": "01/02/2026"
+  },
+  {
+    "id": "PR-3021",
+    "name": "26% Lunch Contributions/ February",
+    "budget_code": "4.1.4",
+    "year": 2026,
+    "amount": 4500.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Abigail Chirwa",
+    "funding_source": "ZGF",
+    "status": "Approved",
+    "date": "01/02/2026"
+  },
+  {
+    "id": "PR-3020",
+    "name": "Resource Mobilization Introductory Meeting",
+    "budget_code": "1.3.1",
+    "year": 2026,
+    "amount": 168300.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Mika Convention Centre",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3019",
+    "name": "Black Square/ Garbage Collection/ February",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 720.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Black Square",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/02/2026"
+  },
+  {
+    "id": "PR-3018",
+    "name": "Staff Team Building/ 50% Payment",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 76216.19,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Protea Chisamba",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3017",
+    "name": "60 Copies/ Newspapers/ February",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 900.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Augustine Chiwevu",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/02/2026"
+  },
+  {
+    "id": "PR-3016",
+    "name": "Fund recovery_Follow-up meeting with Chemu Foundation",
+    "budget_code": "2.1.3",
+    "year": 2026,
+    "amount": 3500.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Yamikani Car Hire",
+    "funding_source": "Mott",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3015",
+    "name": "Tomcard replenishment - Admin/March",
+    "budget_code": "Operations",
+    "year": 2026,
+    "amount": 4950.87,
+    "requested_by": "Kelvin Mambwe",
+    "payee": "Total Energies",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3014",
+    "name": "Fresh Life field visit ",
+    "budget_code": "3.2.5",
+    "year": 2026,
+    "amount": 1380.0,
+    "requested_by": "Sarah Haloba",
+    "payee": "Thomas Hirl ",
+    "funding_source": "Kalulu",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3013",
+    "name": "Airlink March subscription",
+    "budget_code": "4.8.4",
+    "year": 2026,
+    "amount": 24000.01,
+    "requested_by": "Mirriam  Sikalume",
+    "payee": "Airlink",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/03/2026"
+  },
+  {
+    "id": "PR-3012",
+    "name": "OH _ Supplementary Budget",
+    "budget_code": "1.5.1",
+    "year": 2026,
+    "amount": 9340.0,
+    "requested_by": "Aseli Kunda",
+    "payee": "Aseli Kunda",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
     "id": "PR-3011",
     "name": "74% Lunch Contribution/ February",
     "budget_code": "4.8.4",
@@ -8,8 +1136,8 @@
     "requested_by": "Abigail Chirwa",
     "payee": "Abigail Chirwa",
     "funding_source": "Comic Relief",
-    "status": "Pending",
-    "date": "26/02/2026"
+    "status": "Approved",
+    "date": "01/02/2026"
   },
   {
     "id": "PR-3010",
@@ -20,8 +1148,8 @@
     "requested_by": "Fatima Mawele",
     "payee": "ZGF FNB card",
     "funding_source": "Comic Relief",
-    "status": "Pending",
-    "date": "26/02/2026"
+    "status": "Approved",
+    "date": "01/01/2026"
   },
   {
     "id": "PR-3009",
@@ -32,8 +1160,8 @@
     "requested_by": "Abigail Chirwa",
     "payee": "Grand Palace Hotel",
     "funding_source": "Comic Relief",
-    "status": "Pending",
-    "date": "26/02/2026"
+    "status": "Approved",
+    "date": "01/01/2026"
   },
   {
     "id": "PR-3008",
@@ -44,8 +1172,8 @@
     "requested_by": "Kelvin Mambwe",
     "payee": "CareCoop",
     "funding_source": "ZGF",
-    "status": "Pending",
-    "date": "25/02/2026"
+    "status": "Approved",
+    "date": "01/02/2026"
   },
   {
     "id": "PR-3007",
@@ -56,8 +1184,8 @@
     "requested_by": "Kelvin Mambwe",
     "payee": "NAPSA",
     "funding_source": "ZGF",
-    "status": "Pending",
-    "date": "25/02/2026"
+    "status": "Approved",
+    "date": "01/02/2026"
   },
   {
     "id": "PR-3006",
@@ -68,8 +1196,8 @@
     "requested_by": "Kelvin Mambwe",
     "payee": "NHIMA",
     "funding_source": "ZGF",
-    "status": "Pending",
-    "date": "25/02/2026"
+    "status": "Approved",
+    "date": "01/02/2026"
   },
   {
     "id": "PR-3005",
@@ -80,104 +1208,8 @@
     "requested_by": "Kelvin Mambwe",
     "payee": "HELSB",
     "funding_source": "ZGF",
-    "status": "Pending",
-    "date": "25/02/2026"
-  },
-  {
-    "id": "PR-3002",
-    "name": "Women's Day Celebration Lusaka",
-    "budget_code": "4.8.4 and 2.10.2",
-    "year": 2026,
-    "amount": 17390.0,
-    "requested_by": "Taonga Nyirongo",
-    "payee": "Abigai Chirwa",
-    "funding_source": "Comic Relief;#Mott",
-    "status": "Pending",
-    "date": "24/02/2026"
-  },
-  {
-    "id": "PR-3001",
-    "name": "CSSF III Introductory workshop",
-    "budget_code": "1.1.1",
-    "year": 2026,
-    "amount": 152020.0,
-    "requested_by": "Noah Kalaba",
-    "payee": "Rachel - K76,010, Kapaya - K76,010",
-    "funding_source": "Comic Relief",
-    "status": "Pending",
-    "date": "24/02/2026"
-  },
-  {
-    "id": "PR-3000",
-    "name": "Outcome harvesting for Cohort 1 youth groups",
-    "budget_code": "2.4.1",
-    "year": 2026,
-    "amount": 4560.0,
-    "requested_by": "Happiness Moyo",
-    "payee": "Aseli Kunda",
-    "funding_source": "Kalulu",
-    "status": "Pending",
-    "date": "24/02/2026"
-  },
-  {
-    "id": "PR-2994",
-    "name": "Printing of Branding Materials/ STP Debate",
-    "budget_code": "3.7.5",
-    "year": 2026,
-    "amount": 44660.0,
-    "requested_by": "Abigail Chirwa",
-    "payee": "Print City",
-    "funding_source": "Comic Relief",
-    "status": "Pending",
-    "date": "20/02/2026"
-  },
-  {
-    "id": "PR-2993",
-    "name": "Car Hire/ Local Transport",
-    "budget_code": "3.7.5",
-    "year": 2026,
-    "amount": 17500.0,
-    "requested_by": "Abigail Chirwa",
-    "payee": "Yamikani Car Hire",
-    "funding_source": "Comic Relief",
-    "status": "Pending",
-    "date": "20/02/2026"
-  },
-  {
-    "id": "PR-2992",
-    "name": "Bus Hire/ STP Debate",
-    "budget_code": "3.7.5",
-    "year": 2026,
-    "amount": 22.0,
-    "requested_by": "Abigail Chirwa",
-    "payee": "Wolford Car Hire",
-    "funding_source": "Comic Relief",
-    "status": "Pending",
-    "date": "20/02/2026"
-  },
-  {
-    "id": "PR-2973",
-    "name": "Annual camera subscription",
-    "budget_code": "4.8.4",
-    "year": 2026,
-    "amount": 71.96,
-    "requested_by": "Mirriam Sikalume",
-    "payee": "V30 Pro",
-    "funding_source": "Comic Relief",
-    "status": "Pending",
-    "date": "13/02/2026"
-  },
-  {
-    "id": "PR-2971",
-    "name": "Mailchimp annual subscription",
-    "budget_code": "4.8.4",
-    "year": 2026,
-    "amount": 1280.64,
-    "requested_by": "Mirriam Sikalume",
-    "payee": "Mailchimp",
-    "funding_source": "Comic Relief",
-    "status": "Pending",
-    "date": "13/02/2026"
+    "status": "Approved",
+    "date": "01/02/2026"
   },
   {
     "id": "PR-3004",
@@ -189,31 +1221,67 @@
     "payee": "Staff Members",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "25/02/2026"
+    "date": "01/02/2026"
   },
   {
     "id": "PR-3003",
-    "name": "Mott Documentaries",
+    "name": "Mott Documentaries ",
     "budget_code": "3.12.5",
     "year": 2026,
-    "amount": 0,
+    "amount": 1000.0,
     "requested_by": "Taonga Nyirongo",
     "payee": "Taonga Nyirongo",
     "funding_source": "Mott",
     "status": "Approved",
-    "date": "25/02/2026"
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3002",
+    "name": " Women's Day Celebration Lusaka ",
+    "budget_code": " 4.8.4 and 2.10.2",
+    "year": 2026,
+    "amount": 8950.0,
+    "requested_by": "Taonga Nyirongo",
+    "payee": "Abigai Chirwa",
+    "funding_source": "Comic Relief;#Mott",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3001",
+    "name": "CSSF III Introductory workshop",
+    "budget_code": "1.1.1",
+    "year": 2026,
+    "amount": 152020.0,
+    "requested_by": "Noah Kalaba",
+    "payee": "Rachel - K76,010,   Kapaya - K76,010",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-3000",
+    "name": "Outcome harvesting for Cohort 1 youth groups  ",
+    "budget_code": "2.4.1",
+    "year": 2026,
+    "amount": 4560.0,
+    "requested_by": "Happiness Moyo",
+    "payee": "Aseli Kunda ",
+    "funding_source": "Kalulu",
+    "status": "Approved",
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2999",
-    "name": "Fresh water field visit",
+    "name": "Fresh water field visit ",
     "budget_code": "3.2.5",
     "year": 2026,
     "amount": 2870.0,
     "requested_by": "Happiness Moyo",
-    "payee": "Sarah Haloba",
+    "payee": "Sarah Haloba ",
     "funding_source": "Kalulu",
     "status": "Approved",
-    "date": "24/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2998",
@@ -225,7 +1293,7 @@
     "payee": "IZB Corporate",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "23/02/2026"
+    "date": "01/02/2026"
   },
   {
     "id": "PR-2997",
@@ -237,7 +1305,7 @@
     "payee": "IZB Corporate",
     "funding_source": "MOTT $",
     "status": "Approved",
-    "date": "23/02/2026"
+    "date": "01/02/2026"
   },
   {
     "id": "PR-2996",
@@ -249,7 +1317,7 @@
     "payee": "IZB Corporate",
     "funding_source": "Kalulu $",
     "status": "Approved",
-    "date": "23/02/2026"
+    "date": "01/02/2026"
   },
   {
     "id": "PR-2995",
@@ -261,7 +1329,43 @@
     "payee": "Mika",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "20/02/2026"
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-2994",
+    "name": "Printing of Branding Materials/ STP Debate",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 42618.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Print City",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-2993",
+    "name": "Car Hire/ Local Transport",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 17500.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Yamikani Car Hire",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
+  },
+  {
+    "id": "PR-2992",
+    "name": "Bus Hire/ STP Debate",
+    "budget_code": "3.7.5",
+    "year": 2026,
+    "amount": 22.0,
+    "requested_by": "Abigail Chirwa",
+    "payee": "Wolford Car Hire",
+    "funding_source": "Comic Relief",
+    "status": "Approved",
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2991",
@@ -273,7 +1377,7 @@
     "payee": "Workers' Compensation",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "20/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2990",
@@ -285,7 +1389,7 @@
     "payee": "Board Member",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "20/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2989",
@@ -297,11 +1401,11 @@
     "payee": "Board Members",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "20/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2988",
-    "name": "Mott Documentaries",
+    "name": "Mott Documentaries ",
     "budget_code": "3.12.5",
     "year": 2026,
     "amount": 18640.0,
@@ -309,19 +1413,19 @@
     "payee": "Taonga Nyirongo",
     "funding_source": "Mott",
     "status": "Approved",
-    "date": "20/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2987",
     "name": "Request to transfer IZB funds to FNB for subscriptions",
     "budget_code": "8.3",
     "year": 2026,
-    "amount": 2839.08,
+    "amount": 70977.0,
     "requested_by": "Hussein Mbuso Lunat",
     "payee": "FNB Corporate card",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "20/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2986",
@@ -333,7 +1437,7 @@
     "payee": "Coptic Hospital",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "18/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2985",
@@ -345,7 +1449,7 @@
     "payee": "Toplift",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "18/02/2026"
+    "date": "01/09/2026"
   },
   {
     "id": "PR-2984",
@@ -357,7 +1461,7 @@
     "payee": "ZESCO",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "18/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2983",
@@ -369,7 +1473,7 @@
     "payee": "Augustine Chiwevu",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "18/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2982",
@@ -381,19 +1485,19 @@
     "payee": "Pa Kabinet",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "18/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2981",
     "name": "Full Membership fee-APN-Jan-Dec2026",
     "budget_code": "Operations",
     "year": 2026,
-    "amount": 1000.0,
+    "amount": 25000.0,
     "requested_by": "Kelvin Mambwe",
     "payee": "APN",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "18/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2980",
@@ -405,19 +1509,19 @@
     "payee": "Willa Benjamin Maivune",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "17/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2978",
-    "name": "Participation in StP Finance Sub-Group Meeting",
+    "name": "Participation in StP Finance Sub-Group Meeting ",
     "budget_code": "",
     "year": 2026,
-    "amount": 20000.0,
+    "amount": 1000.0,
     "requested_by": "Kelvin Mambwe",
     "payee": "Catherine Daka",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "16/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2977",
@@ -429,7 +1533,7 @@
     "payee": "Kazungo Emmanuel Ndeya (Ken Dumbo)",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "16/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2975",
@@ -441,43 +1545,43 @@
     "payee": "ZRA",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "16/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2974",
     "name": "Professional Membership (International)",
     "budget_code": "4.8.4",
     "year": 2026,
-    "amount": 145.5,
+    "amount": 4656.0,
     "requested_by": "Darren Phiri",
     "payee": "Darren Phiri",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2972",
     "name": "Microsoft annual subscription",
     "budget_code": "4.8.4",
     "year": 2026,
-    "amount": 765.6,
-    "requested_by": "Mirriam Sikalume",
+    "amount": 19140.0,
+    "requested_by": "Mirriam  Sikalume",
     "payee": "Microsoft",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2970",
     "name": "Funds for NGO annual subscription",
     "budget_code": "4.8.4",
     "year": 2026,
-    "amount": 49.0,
-    "requested_by": "Mirriam Sikalume",
+    "amount": 1225.0,
+    "requested_by": "Mirriam  Sikalume",
     "payee": "Funds for NGO",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2969",
@@ -489,7 +1593,7 @@
     "payee": "Pa Kabinet",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2968",
@@ -501,7 +1605,7 @@
     "payee": "Career Prospects Limited",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2967",
@@ -513,7 +1617,7 @@
     "payee": "CFAO Mobility Limited",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2966",
@@ -525,7 +1629,7 @@
     "payee": "Abigail Chirwa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2965",
@@ -537,7 +1641,7 @@
     "payee": "Innotel Investments",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2964",
@@ -549,7 +1653,7 @@
     "payee": "Darren",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2963",
@@ -561,7 +1665,7 @@
     "payee": "Abigail Chirwa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2962",
@@ -573,19 +1677,19 @@
     "payee": "Abigail Chirwa",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "13/02/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2961",
     "name": "Transfer - CR Operational funds",
     "budget_code": "5.3.1",
     "year": 2026,
-    "amount": 75000.0,
+    "amount": 2400000.0,
     "requested_by": "Kelvin Mambwe",
     "payee": "Comic Relief",
     "funding_source": "LOOP",
     "status": "Approved",
-    "date": "2026-12-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2960",
@@ -597,11 +1701,11 @@
     "payee": "Aseli Kunda",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-12-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2959",
-    "name": "SHG Learning Session",
+    "name": "SHG Learning Session ",
     "budget_code": "2.1.3",
     "year": 2026,
     "amount": 3220.0,
@@ -609,7 +1713,7 @@
     "payee": "Pauline Katebe",
     "funding_source": "Sharetrust",
     "status": "Approved",
-    "date": "2026-12-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2958",
@@ -618,10 +1722,10 @@
     "year": 2026,
     "amount": 2854.5,
     "requested_by": "Happiness Moyo",
-    "payee": "Project Management Institute Zambia Chapter",
+    "payee": "Project Management Institute Zambia Chapter ",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-11-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2957",
@@ -633,7 +1737,7 @@
     "payee": "Kelvin Mambwe",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "2026-11-02"
+    "date": "01/02/2026"
   },
   {
     "id": "PR-2956",
@@ -645,11 +1749,11 @@
     "payee": "Pauline Katebe",
     "funding_source": "Sharetrust",
     "status": "Approved",
-    "date": "2026-10-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2955",
-    "name": "Support (OS-demand based) interventions CSSF partners",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
     "budget_code": "1.1.2",
     "year": 2026,
     "amount": 35658.43,
@@ -657,11 +1761,11 @@
     "payee": "Ketty Simasiku",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-10-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2954",
-    "name": "Support (OS-demand based) interventions CSSF partners",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
     "budget_code": "1.1.2",
     "year": 2026,
     "amount": 33.0,
@@ -669,7 +1773,7 @@
     "payee": "Gerard Chalila",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-10-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2953",
@@ -681,11 +1785,11 @@
     "payee": "MPH",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-10-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2952",
-    "name": "Support (OS-demand based) interventions CSSF partners",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
     "budget_code": "1.1.2",
     "year": 2026,
     "amount": 23043.48,
@@ -693,11 +1797,11 @@
     "payee": "Tandwa Syakayuwa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-10-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2951",
-    "name": "Support (OS-demand based) interventions CSSF partners",
+    "name": "Support (OS-demand based) interventions CSSF partners ",
     "budget_code": "1.1.2",
     "year": 2026,
     "amount": 25024.0,
@@ -705,7 +1809,7 @@
     "payee": "Alice Sayi",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-10-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2950",
@@ -717,19 +1821,19 @@
     "payee": "ZIPRC",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-09-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2949",
     "name": "Annual Hostinger Subscription",
     "budget_code": "4.8.4",
     "year": 2026,
-    "amount": 671.88,
-    "requested_by": "Mirriam Sikalume",
+    "amount": 16797.0,
+    "requested_by": "Mirriam  Sikalume",
     "payee": "Hostinger",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-09-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2948",
@@ -741,7 +1845,7 @@
     "payee": "Board Members",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2947",
@@ -753,7 +1857,7 @@
     "payee": "Board Members",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2946",
@@ -765,7 +1869,7 @@
     "payee": "Board Members",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2945",
@@ -777,7 +1881,7 @@
     "payee": "Black Square",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2944",
@@ -789,7 +1893,7 @@
     "payee": "The Institute of Directors Zambia",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2943",
@@ -801,7 +1905,7 @@
     "payee": "The Institute of Director Zambia",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2942",
@@ -813,7 +1917,7 @@
     "payee": "Reign Photography",
     "funding_source": "Mott",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2941",
@@ -825,11 +1929,11 @@
     "payee": "Abigail Chirwa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2940",
-    "name": "Procurement Studio/ STP Debate",
+    "name": "Procurement Studio/ STP Debate ",
     "budget_code": "3.7.5",
     "year": 2026,
     "amount": 350656.4,
@@ -837,7 +1941,7 @@
     "payee": "ZNBC",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2939",
@@ -849,7 +1953,7 @@
     "payee": "Doris Msoni",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2938",
@@ -858,10 +1962,10 @@
     "year": 2026,
     "amount": 21250.0,
     "requested_by": "Sarah Haloba",
-    "payee": "Sarah Haloba",
+    "payee": "Sarah Haloba ",
     "funding_source": "Mott",
     "status": "Approved",
-    "date": "2026-06-02"
+    "date": "06/02/2026"
   },
   {
     "id": "PR-2937",
@@ -873,7 +1977,7 @@
     "payee": "ZSIC Life",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-05-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2936",
@@ -885,7 +1989,7 @@
     "payee": "Musola C. Kaseketi",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-05-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2935",
@@ -897,7 +2001,7 @@
     "payee": "ZRA",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "2026-04-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2933",
@@ -909,7 +2013,7 @@
     "payee": "Fatima Mawele",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-04-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2932",
@@ -917,11 +2021,11 @@
     "budget_code": "8.3",
     "year": 2026,
     "amount": 1000.0,
-    "requested_by": "Mirriam Sikalume",
+    "requested_by": "Mirriam  Sikalume",
     "payee": "Mirriam Sikalume",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "2026-04-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2931",
@@ -929,11 +2033,11 @@
     "budget_code": "8.3",
     "year": 2026,
     "amount": 24000.01,
-    "requested_by": "Mirriam Sikalume",
+    "requested_by": "Mirriam  Sikalume",
     "payee": "Airlink",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-04-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2930",
@@ -945,7 +2049,7 @@
     "payee": "Board Members",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-03-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2929",
@@ -957,7 +2061,7 @@
     "payee": "Nemchem International",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-03-02"
+    "date": "01/03/2026"
   },
   {
     "id": "PR-2928",
@@ -969,11 +2073,11 @@
     "payee": "Printech Ltd",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-03-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2927",
-    "name": "Kalulu Cohort 3 application assessment",
+    "name": "Kalulu Cohort 3 application assessment ",
     "budget_code": "2.1.3",
     "year": 2026,
     "amount": 1560.0,
@@ -981,7 +2085,7 @@
     "payee": "Happiness Moyo",
     "funding_source": "Kalulu",
     "status": "Approved",
-    "date": "2026-03-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2926",
@@ -993,7 +2097,7 @@
     "payee": "Nomads Court",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-03-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2925",
@@ -1005,7 +2109,7 @@
     "payee": "Nomads Court",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-03-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2924",
@@ -1017,7 +2121,7 @@
     "payee": "Sarah Haloba",
     "funding_source": "Mott",
     "status": "Approved",
-    "date": "2026-03-02"
+    "date": "03/02/2026"
   },
   {
     "id": "PR-2923",
@@ -1029,7 +2133,7 @@
     "payee": "Abigail Chirwa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-03-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2922",
@@ -1041,7 +2145,7 @@
     "payee": "Abigail Chirwa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-03-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2921",
@@ -1053,7 +2157,7 @@
     "payee": "Abigail Chirwa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-02-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2920",
@@ -1062,10 +2166,10 @@
     "year": 2026,
     "amount": 37378.0,
     "requested_by": "Sarah Haloba",
-    "payee": "Happiness Moyo",
+    "payee": "Happiness Moyo ",
     "funding_source": "Mott",
     "status": "Approved",
-    "date": "2026-02-02"
+    "date": "01/02/2026"
   },
   {
     "id": "PR-2919",
@@ -1077,7 +2181,7 @@
     "payee": "Times Printpak",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-02-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2918",
@@ -1089,7 +2193,7 @@
     "payee": "CareCoop",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "2026-02-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2917",
@@ -1101,7 +2205,7 @@
     "payee": "NAPSA",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "2026-02-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2916",
@@ -1113,7 +2217,7 @@
     "payee": "HELSB",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "2026-02-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2915",
@@ -1125,7 +2229,7 @@
     "payee": "NHIMA",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "2026-02-02"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2914",
@@ -1137,7 +2241,7 @@
     "payee": "ZICA",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "30/01/2026"
+    "date": "01/02/2026"
   },
   {
     "id": "PR-2913",
@@ -1149,7 +2253,7 @@
     "payee": "Taonga Nyirongo",
     "funding_source": "Mott",
     "status": "Approved",
-    "date": "29/01/2026"
+    "date": "01/12/2026"
   },
   {
     "id": "PR-2912",
@@ -1161,31 +2265,31 @@
     "payee": "BayPort",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "29/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2911",
     "name": "Chemu_CF_Fianal_fund_recovery_28 Sept 2026",
-    "budget_code": "2.13",
+    "budget_code": "2.13 ",
     "year": 2026,
     "amount": 1420.0,
     "requested_by": "Sarah Haloba",
-    "payee": "Sarah Haloba",
+    "payee": "Sarah Haloba ",
     "funding_source": "Mott",
     "status": "Approved",
-    "date": "28/01/2026"
+    "date": "28/09/2026"
   },
   {
     "id": "PR-2910",
-    "name": "Participation in StP Finance Sub-Group Meeting",
+    "name": "Participation in StP Finance Sub-Group Meeting ",
     "budget_code": "",
     "year": 2026,
-    "amount": 2906.0,
+    "amount": 92992.0,
     "requested_by": "Kelvin Mambwe",
     "payee": "Catherine Daka",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "28/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2909",
@@ -1197,7 +2301,7 @@
     "payee": "Staff Members",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "27/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2908",
@@ -1209,7 +2313,7 @@
     "payee": "IZB Corporate",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "23/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2907",
@@ -1221,7 +2325,7 @@
     "payee": "Mailchimp",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "22/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2906",
@@ -1233,19 +2337,19 @@
     "payee": "Engwase Mwale",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "21/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2905",
     "name": "SAGE annual subscription/2026",
     "budget_code": "5.3.1",
     "year": 2026,
-    "amount": 668.16,
+    "amount": 16704.0,
     "requested_by": "Kelvin Mambwe",
     "payee": "Omni Africa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "21/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2904",
@@ -1257,7 +2361,7 @@
     "payee": "IZB Corporate",
     "funding_source": "Kalulu $",
     "status": "Approved",
-    "date": "20/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2903",
@@ -1269,19 +2373,19 @@
     "payee": "IZB Corporate",
     "funding_source": "MOTT $",
     "status": "Approved",
-    "date": "20/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2902",
-    "name": "STP Debate engagement visit to CBU and Mulung",
-    "budget_code": "3.2",
+    "name": "STP Debate engagement visit to CBU and Mulung ",
+    "budget_code": "3.2 ",
     "year": 2026,
     "amount": 29440.35,
     "requested_by": "Taonga Nyirongo",
     "payee": "Taonga Nyirongo",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "19/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2900",
@@ -1293,7 +2397,7 @@
     "payee": "Board Members",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "19/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2894",
@@ -1305,7 +2409,7 @@
     "payee": "Career Prospects Limited",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "14/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2893",
@@ -1317,31 +2421,31 @@
     "payee": "Fatima Mawele",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2892",
     "name": "UK Shifting Cultures Festival",
     "budget_code": "1.1.7",
     "year": 2026,
-    "amount": 12500.0,
+    "amount": 1000.0,
     "requested_by": "Fatima Mawele",
     "payee": "Fatima Mawele",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2891",
     "name": "UK Shifting Cultures Festival",
     "budget_code": "1.1.7",
     "year": 2026,
-    "amount": 12500.0,
+    "amount": 1000.0,
     "requested_by": "Fatima Mawele",
     "payee": "Engwase Mwale",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/01/2026"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2889",
@@ -1353,7 +2457,7 @@
     "payee": "ZANACO A/C",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "2026-12-01"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2884",
@@ -1365,7 +2469,7 @@
     "payee": "Abigail Chirwa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-09-01"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2882",
@@ -1377,31 +2481,31 @@
     "payee": "Mambwe Kelvin",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-08-01"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2881",
     "name": "UK Visa appointment",
     "budget_code": "1.1.7",
     "year": 2026,
-    "amount": 76.5,
+    "amount": 2448.0,
     "requested_by": "Fatima Mawele",
     "payee": "Engwase Mwale",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-01"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2880",
     "name": "UK Visa appointment",
     "budget_code": "1.1.7",
     "year": 2026,
-    "amount": 76.5,
+    "amount": 62.31,
     "requested_by": "Fatima Mawele",
     "payee": "Fatima Mawele",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-01"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2879",
@@ -1410,10 +2514,10 @@
     "year": 2026,
     "amount": 33207.3,
     "requested_by": "Kelvin Mambwe",
-    "payee": "Guardian Insurance",
+    "payee": "Guardian Insurance ",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-06-01"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2876",
@@ -1425,7 +2529,7 @@
     "payee": "Engwase Mwale",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-05-01"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2875",
@@ -1437,7 +2541,7 @@
     "payee": "Total Energies",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-05-01"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2872",
@@ -1449,7 +2553,7 @@
     "payee": "Abigail Chirwa",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-05-01"
+    "date": "01/12/2026"
   },
   {
     "id": "PR-2871",
@@ -1457,11 +2561,11 @@
     "budget_code": "5.3.1",
     "year": 2026,
     "amount": 24000.01,
-    "requested_by": "Mirriam Sikalume",
-    "payee": "Airlink",
+    "requested_by": "Mirriam  Sikalume",
+    "payee": "Airlink ",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "2026-05-01"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2870",
@@ -1473,11 +2577,11 @@
     "payee": "Total Energies",
     "funding_source": "Mott",
     "status": "Approved",
-    "date": "2026-05-01"
+    "date": "01/11/2026"
   },
   {
     "id": "PR-2869",
-    "name": "Tomcard Replenishment - Kalulu II/Nov",
+    "name": "Tomcard Replenishment  - Kalulu II/Nov",
     "budget_code": "5.3.1",
     "year": 2026,
     "amount": 5030.0,
@@ -1485,7 +2589,7 @@
     "payee": "Total Energies",
     "funding_source": "Kalulu",
     "status": "Approved",
-    "date": "2026-05-01"
+    "date": "01/11/2026"
   },
   {
     "id": "PR-2868",
@@ -1497,7 +2601,7 @@
     "payee": "Mambwe Kelvin",
     "funding_source": "ZGF",
     "status": "Approved",
-    "date": "2026-05-01"
+    "date": "01/12/2026"
   },
   {
     "id": "PR-2639",
@@ -1509,18 +2613,18 @@
     "payee": "Fatima Mawele",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "14/10/2025"
+    "date": "01/01/2026"
   },
   {
     "id": "PR-2632",
     "name": "Financial Management for Development Professionals",
     "budget_code": "5.1.1",
     "year": 2026,
-    "amount": 449.0,
+    "amount": 11225.0,
     "requested_by": "Darren Phiri",
     "payee": "Darren Phiri",
     "funding_source": "Comic Relief",
     "status": "Approved",
-    "date": "13/10/2025"
+    "date": "01/01/2026"
   }
 ]

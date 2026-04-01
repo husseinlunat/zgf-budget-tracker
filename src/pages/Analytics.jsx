@@ -48,6 +48,8 @@ export default function Analytics({ fundingFilter }) {
     const { lines, loading: linesLoading } = useBudgetLines()
     const { requests, loading: reqsLoading } = usePaymentRequests()
     const [personFilter, setPersonFilter] = React.useState('All')
+    const [categoryFilter, setCategoryFilter] = React.useState('All')
+    const [statusFilter, setStatusFilter] = React.useState('All')
     const loading = linesLoading || reqsLoading
 
     const requesters = useMemo(() => {
@@ -55,47 +57,45 @@ export default function Analytics({ fundingFilter }) {
         return ['All', ...Array.from(set).sort()]
     }, [requests])
 
+    const expenseCategories = useMemo(() => {
+        const set = new Set(lines.map(l => l.odooCategory).filter(Boolean))
+        return ['All', ...Array.from(set).sort()]
+    }, [lines])
+
     const filtered = useMemo(() =>
         fundingFilter === 'All' ? lines : lines.filter((l) => l.fundingSource === fundingFilter),
         [lines, fundingFilter]
     )
 
+    const filteredRequests = useMemo(() => {
+        return requests.filter(r => {
+            const line = lines.find(l => l.id === r.budgetLineId)
+            const matchesPerson = personFilter === 'All' || r.requestedBy?.trim() === personFilter
+            const matchesStatus = statusFilter === 'All' || r.status === statusFilter
+            const matchesCategory = categoryFilter === 'All' || line?.odooCategory === categoryFilter
+            const matchesFunding = fundingFilter === 'All' || line?.fundingSource === fundingFilter
+            return matchesPerson && matchesStatus && matchesCategory && matchesFunding
+        })
+    }, [requests, lines, personFilter, statusFilter, categoryFilter, fundingFilter])
+
     const requestAnalytics = useMemo(() => {
-        const lineMap = Object.fromEntries(lines.map(l => [l.id, l]))
-        let validReqs = requests
-        
-        if (fundingFilter !== 'All') {
-            validReqs = validReqs.filter(r => {
-                const line = lineMap[r.budgetLineId]
-                return line?.fundingSource === fundingFilter
-            })
-        }
-
-        if (personFilter !== 'All') {
-            validReqs = validReqs.filter(r => r.requestedBy?.trim() === personFilter)
-        }
-
-        const personMap = {}
         const categories = new Set()
+        const personMap = {}
+        const lineMap = Object.fromEntries(lines.map(l => [l.id, l]))
 
-        validReqs.forEach(req => {
+        filteredRequests.forEach(req => {
             const line = lineMap[req.budgetLineId]
             const category = line?.odooCategory || 'Other'
             const person = req.requestedBy?.trim() || 'Unknown'
-            
             categories.add(category)
-
             if (!personMap[person]) personMap[person] = { name: person, total: 0 }
             personMap[person][category] = (personMap[person][category] || 0) + req.amount
             personMap[person].total += req.amount
         })
 
-        const sortedData = Object.values(personMap)
-                                 .sort((a, b) => b.total - a.total)
-                                 .slice(0, 8) 
-        
+        const sortedData = Object.values(personMap).sort((a, b) => b.total - a.total).slice(0, 8)
         return { data: sortedData, categories: Array.from(categories) }
-    }, [requests, lines, fundingFilter, personFilter])
+    }, [filteredRequests, lines])
 
     const quarterData = useMemo(() => {
         const t = { q1: 0, q2: 0, q3: 0, q4: 0 }
@@ -110,26 +110,41 @@ export default function Analytics({ fundingFilter }) {
 
     const pillarData = useMemo(() => {
         const map = {}
-        filtered.forEach(({ strategicPillar, totalCost, spent }) => {
+        const spentMap = {}
+        filteredRequests.forEach(r => {
+            if (r.status === 'Approved') {
+                spentMap[r.budgetLineId] = (spentMap[r.budgetLineId] || 0) + r.amount
+            }
+        })
+
+        filtered.forEach(({ id, strategicPillar, totalCost }) => {
             const key = PILLAR_SHORT[strategicPillar] || strategicPillar
             if (!map[key]) map[key] = { name: key, Budget: 0, Spent: 0, Remaining: 0 }
             map[key].Budget += totalCost
-            map[key].Spent += spent || 0
-            map[key].Remaining += totalCost - (spent || 0)
+            map[key].Spent += spentMap[id] || 0
+            map[key].Remaining += totalCost - (spentMap[id] || 0)
         })
         return Object.values(map)
-    }, [filtered])
+    }, [filtered, filteredRequests])
 
     const donutData = useMemo(() => {
         const map = {}
-        filtered.forEach(({ fundingSource, totalCost, spent }) => {
-            const rem = totalCost - (spent || 0)
+        const spentMap = {}
+        filteredRequests.forEach(r => {
+            if (r.status === 'Approved') {
+                spentMap[r.budgetLineId] = (spentMap[r.budgetLineId] || 0) + r.amount
+            }
+        })
+
+        filtered.forEach(({ id, fundingSource, totalCost }) => {
+            const spent = spentMap[id] || 0
+            const rem = totalCost - spent
             if (rem > 0) {
                 map[fundingSource] = (map[fundingSource] || 0) + rem
             }
         })
         return Object.entries(map).map(([name, value]) => ({ name, value }))
-    }, [filtered])
+    }, [filtered, filteredRequests])
 
     const [activePieIndex, setActivePieIndex] = React.useState(0)
 
@@ -146,17 +161,36 @@ export default function Analytics({ fundingFilter }) {
 
     return (
         <div className="p-6 space-y-6 animate-fade-in-up">
-            <div className="flex items-center justify-between">
-                <h1 className="text-xl font-bold text-gray-900">Analytics Overview</h1>
+            <div className="bg-white rounded-2xl p-4 shadow-card border border-gray-100 flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-400 font-medium whitespace-nowrap">Filter by Requester:</span>
-                    <select 
-                        className="input-field py-1 px-3 text-xs min-w-[160px]"
-                        value={personFilter}
-                        onChange={(e) => setPersonFilter(e.target.value)}
-                    >
-                        {requesters.map(r => <option key={r} value={r}>{r}</option>)}
-                    </select>
+                    <div className="p-2 bg-primary-50 rounded-lg text-primary-600">
+                        <Loader2 size={16} className={loading ? 'animate-spin' : ''} />
+                    </div>
+                    <div>
+                        <h1 className="text-sm font-bold text-gray-900 leading-tight">Smart Analytics</h1>
+                        <p className="text-[10px] text-gray-400 font-medium tracking-wide uppercase">Multi-Parameter Cross Filtering</p>
+                    </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-3">
+                    <div className="flex flex-col gap-1">
+                        <label className="text-[10px] font-bold text-gray-400 uppercase ml-1">Requester</label>
+                        <select className="input-field py-1 px-3 text-xs min-w-[140px]" value={personFilter} onChange={(e) => setPersonFilter(e.target.value)}>
+                            {requesters.map(r => <option key={r} value={r}>{r}</option>)}
+                        </select>
+                    </div>
+                    <div className="flex flex-col gap-1">
+                        <label className="text-[10px] font-bold text-gray-400 uppercase ml-1">Expense Type</label>
+                        <select className="input-field py-1 px-3 text-xs min-w-[140px]" value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)}>
+                            {expenseCategories.map(c => <option key={c} value={c}>{c}</option>)}
+                        </select>
+                    </div>
+                    <div className="flex flex-col gap-1">
+                        <label className="text-[10px] font-bold text-gray-400 uppercase ml-1">Status</label>
+                        <select className="input-field py-1 px-3 text-xs min-w-[120px]" value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)}>
+                            {['All', 'Approved', 'Pending', 'Rejected'].map(s => <option key={s} value={s}>{s}</option>)}
+                        </select>
+                    </div>
                 </div>
             </div>
 

@@ -9,6 +9,13 @@ import { useBudgetLines } from '../hooks/useBudgetLines'
 import { usePaymentRequests } from '../hooks/usePaymentRequests'
 import { computeSummary, formatZMW } from '../data/budgetData'
 import { isSupabaseConfigured } from '../lib/supabaseClient'
+import { CheckCircle2, Clock, XCircle, Info } from 'lucide-react'
+
+function StatusBadge({ status }) {
+    const map = { Approved: 'badge-green', Pending: 'badge-amber', Rejected: 'badge-red' }
+    const icons = { Approved: <CheckCircle2 size={10} />, Pending: <Clock size={10} />, Rejected: <XCircle size={10} /> }
+    return <span className={`badge ${map[status] || 'badge-gray'} gap-1`}>{icons[status]}{status}</span>
+}
 
 const COLORS = ['#16a34a', '#22c55e', '#4ade80', '#86efac', '#bbf7d0', '#15803d', '#166534']
 
@@ -48,6 +55,7 @@ const renderActiveShape = (props) => {
 
 export default function Dashboard({ fundingFilter }) {
     const [activePieIndex, setActivePieIndex] = useState(0)
+    const [info, setInfo] = useState(null)
     const { lines, loading: linesLoading } = useBudgetLines()
     const { requests, loading: requestsLoading } = usePaymentRequests()
 
@@ -170,19 +178,64 @@ export default function Dashboard({ fundingFilter }) {
                         </thead>
                         <tbody>
                             {recentRequests.map((req) => (
-                                <tr key={req.id} className="hover:bg-gray-50 transition-colors">
-                                    <td className="table-td font-mono text-xs">{req.id}</td>
-                                    <td className="table-td font-medium">{req.name}</td>
+                                <tr key={req.id} className="hover:bg-gray-50 transition-colors cursor-pointer" onClick={() => setInfo(req)}>
+                                    <td className="table-td font-mono text-xs text-primary-700 font-semibold">{req.id}</td>
+                                    <td className="table-td font-medium max-w-[200px] truncate">{req.name}</td>
                                     <td className="table-td font-mono text-xs text-gray-500">{req.budgetCode}</td>
-                                    <td className="table-td font-semibold">{formatZMW(req.amount)}</td>
-                                    <td className="table-td"><span className={statusBadge(req.status)}>{req.status}</span></td>
-                                    <td className="table-td text-gray-400">{req.date}</td>
+                                    <td className="table-td font-semibold text-gray-800">{formatZMW(req.amount)}</td>
+                                    <td className="table-td"><StatusBadge status={req.status} /></td>
+                                    <td className="table-td text-gray-400 text-xs">{req.date}</td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
             </div>
+
+            {/* Detail Modal */}
+            {info && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/25 backdrop-blur-sm p-4" onClick={() => setInfo(null)}>
+                    <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full animate-fade-in-up" onClick={(e) => e.stopPropagation()}>
+                        <div className="flex justify-between items-start mb-4">
+                            <div>
+                                <p className="text-[10px] font-bold text-primary-600 uppercase tracking-widest">{info.id}</p>
+                                <h3 className="text-lg font-bold text-gray-900 mt-1 leading-tight">{info.name}</h3>
+                            </div>
+                            <StatusBadge status={info.status} />
+                        </div>
+                        
+                        <div className="space-y-3 py-4 border-y border-gray-50">
+                            {[
+                                ['Budget Code', info.budgetCode],
+                                ['Funding Source', info.fundingSource || '—'],
+                                ['Amount', formatZMW(info.amount)],
+                                ['Requested By', info.requestedBy],
+                                ['Payee', info.payee || '—'],
+                                ['Date', info.date],
+                                ['Year', info.year],
+                            ].map(([k, v]) => (
+                                <div key={k} className="flex justify-between text-xs">
+                                    <span className="text-gray-400 font-medium">{k}</span>
+                                    <span className="font-semibold text-gray-700">{v}</span>
+                                </div>
+                            ))}
+                        </div>
+
+                        {info.status === 'Approved' && (
+                            <div className="mt-4 p-3 bg-primary-50 rounded-xl border border-primary-100 flex gap-3 italic">
+                                <Info size={14} className="text-primary-600 shrink-0 mt-0.5" />
+                                <p className="text-[11px] text-primary-700 leading-normal">
+                                    This amount has been deducted from the linked budget line.
+                                </p>
+                            </div>
+                        )}
+
+                        <button className="btn-primary w-full justify-center mt-6 py-2.5 rounded-xl shadow-lg shadow-primary-200" onClick={() => setInfo(null)}>
+                            Close Details
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
