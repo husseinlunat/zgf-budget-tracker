@@ -15,6 +15,7 @@ function mapRow(row) {
         year: row.year,
         amount: Number(row.amount),
         requestedBy: row.requested_by,
+        fundingSource: row.funding_source,
         status: row.status,
         date: row.date,
         syncedAt: row.synced_at,
@@ -42,6 +43,7 @@ export function usePaymentRequests() {
             const { data, error: err } = await supabase
                 .from('payment_requests')
                 .select('*')
+                .eq('year', 2026)
                 .order('date', { ascending: false })
             if (err) throw err
             setRequests((data || []).map(mapRow))
