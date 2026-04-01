@@ -146,7 +146,7 @@ export default function PaymentRequests({ fundingFilter }) {
                     <table className="w-full">
                         <thead>
                             <tr className="border-b border-gray-100">
-                                {['Item ID', 'Name', 'Budget Code', 'Funding Source', 'Year', 'Amount', 'Requested By', 'Date', 'Status'].map((h) => (
+                                {['Item ID', 'Name', 'Category', 'Budget Code', 'Funding Source', 'Amount', 'Requested By', 'Date', 'Status'].map((h) => (
                                     <th key={h} className="table-th">{h}</th>
                                 ))}
                             </tr>
@@ -158,13 +158,13 @@ export default function PaymentRequests({ fundingFilter }) {
                                     <tr key={req.id} className="hover:bg-gray-50 transition-colors cursor-pointer"
                                         onClick={() => setInfo(req)}>
                                         <td className="table-td font-mono text-xs text-primary-700 font-semibold">{req.id}</td>
-                                        <td className="table-td font-medium max-w-[180px]"><p className="truncate">{req.name}</p></td>
+                                        <td className="table-td font-medium max-w-[150px]"><p className="truncate">{req.name}</p></td>
+                                        <td className="table-td text-xs text-gray-500 truncate max-w-[120px]">{line?.odooCategory || 'Other'}</td>
                                         <td className="table-td font-mono text-xs text-gray-500">{req.budgetCode}</td>
-                                        <td className="table-td text-xs text-gray-500 max-w-[140px]"><p className="truncate">{req.fundingSource || '—'}</p></td>
-                                        <td className="table-td">{req.year}</td>
+                                        <td className="table-td text-xs text-gray-500 max-w-[120px]"><p className="truncate">{req.fundingSource || '—'}</p></td>
                                         <td className="table-td font-semibold text-gray-800">{formatZMW(req.amount)}</td>
-                                        <td className="table-td text-gray-500">{req.requestedBy}</td>
-                                        <td className="table-td text-gray-400">{req.date}</td>
+                                        <td className="table-td text-gray-500 text-xs">{req.requestedBy}</td>
+                                        <td className="table-td text-gray-400 text-xs">{req.date}</td>
                                         <td className="table-td"><StatusBadge status={req.status} /></td>
                                     </tr>
                                 )

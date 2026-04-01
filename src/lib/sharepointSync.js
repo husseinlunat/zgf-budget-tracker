@@ -109,7 +109,7 @@ export async function fetchSharePointRequests() {
                 synced_at: new Date().toISOString(),
             }
         })
-        .filter(item => item.year === 2025) // Only calculate requests with the year "2025"
+        .filter(item => item.year === 2026) // Only calculate requests with the year "2026"
 }
 
 /**

@@ -5,6 +5,7 @@ import {
 } from 'recharts'
 import { Loader2 } from 'lucide-react'
 import { useBudgetLines } from '../hooks/useBudgetLines'
+import { usePaymentRequests } from '../hooks/usePaymentRequests'
 import { formatZMW } from '../data/budgetData'
 
 const PILLAR_SHORT = {
@@ -44,12 +45,57 @@ const CustomTooltip = ({ active, payload, label }) => {
 }
 
 export default function Analytics({ fundingFilter }) {
-    const { lines, loading } = useBudgetLines()
+    const { lines, loading: linesLoading } = useBudgetLines()
+    const { requests, loading: reqsLoading } = usePaymentRequests()
+    const [personFilter, setPersonFilter] = React.useState('All')
+    const loading = linesLoading || reqsLoading
+
+    const requesters = useMemo(() => {
+        const set = new Set(requests.map(r => r.requestedBy?.trim()).filter(Boolean))
+        return ['All', ...Array.from(set).sort()]
+    }, [requests])
 
     const filtered = useMemo(() =>
         fundingFilter === 'All' ? lines : lines.filter((l) => l.fundingSource === fundingFilter),
         [lines, fundingFilter]
     )
+
+    const requestAnalytics = useMemo(() => {
+        const lineMap = Object.fromEntries(lines.map(l => [l.id, l]))
+        let validReqs = requests
+        
+        if (fundingFilter !== 'All') {
+            validReqs = validReqs.filter(r => {
+                const line = lineMap[r.budgetLineId]
+                return line?.fundingSource === fundingFilter
+            })
+        }
+
+        if (personFilter !== 'All') {
+            validReqs = validReqs.filter(r => r.requestedBy?.trim() === personFilter)
+        }
+
+        const personMap = {}
+        const categories = new Set()
+
+        validReqs.forEach(req => {
+            const line = lineMap[req.budgetLineId]
+            const category = line?.odooCategory || 'Other'
+            const person = req.requestedBy?.trim() || 'Unknown'
+            
+            categories.add(category)
+
+            if (!personMap[person]) personMap[person] = { name: person, total: 0 }
+            personMap[person][category] = (personMap[person][category] || 0) + req.amount
+            personMap[person].total += req.amount
+        })
+
+        const sortedData = Object.values(personMap)
+                                 .sort((a, b) => b.total - a.total)
+                                 .slice(0, 8) 
+        
+        return { data: sortedData, categories: Array.from(categories) }
+    }, [requests, lines, fundingFilter, personFilter])
 
     const quarterData = useMemo(() => {
         const t = { q1: 0, q2: 0, q3: 0, q4: 0 }
@@ -100,6 +146,20 @@ export default function Analytics({ fundingFilter }) {
 
     return (
         <div className="p-6 space-y-6 animate-fade-in-up">
+            <div className="flex items-center justify-between">
+                <h1 className="text-xl font-bold text-gray-900">Analytics Overview</h1>
+                <div className="flex items-center gap-2">
+                    <span className="text-xs text-gray-400 font-medium whitespace-nowrap">Filter by Requester:</span>
+                    <select 
+                        className="input-field py-1 px-3 text-xs min-w-[160px]"
+                        value={personFilter}
+                        onChange={(e) => setPersonFilter(e.target.value)}
+                    >
+                        {requesters.map(r => <option key={r} value={r}>{r}</option>)}
+                    </select>
+                </div>
+            </div>
+
             {/* Quarter Timeline */}
             <div className="bg-white rounded-2xl p-5 shadow-card border border-gray-100">
                 <h2 className="text-sm font-semibold text-gray-700 mb-4">Quarterly Planned Budget Timeline</h2>
@@ -173,6 +233,26 @@ export default function Analytics({ fundingFilter }) {
                         })}
                     </div>
                 </div>
+            </div>
+
+            {/* Cross Analytics: Requester & Expense Type */}
+            <div className="bg-white rounded-2xl p-5 shadow-card border border-gray-100">
+                <h2 className="text-sm font-semibold text-gray-700 mb-4">Requests by Person & Expense Type (Top 8)</h2>
+                <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={requestAnalytics.data} layout="vertical" margin={{ left: 20 }}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#f3f4f6" horizontal={true} vertical={false} />
+                        <XAxis type="number" tickFormatter={(v) => `${(v / 1000).toFixed(0)}K`} tick={{ fontSize: 10, fill: '#6b7280' }} axisLine={false} tickLine={false} />
+                        <YAxis type="category" dataKey="name" tick={{ fontSize: 10, fill: '#4b5563' }} axisLine={false} tickLine={false} width={120} />
+                        <Tooltip content={<CustomTooltip />} />
+                        <Legend wrapperStyle={{ fontSize: 11, paddingTop: '10px' }} />
+                        {requestAnalytics.categories.map((cat, i) => (
+                            <Bar key={cat} dataKey={cat} stackId="a" fill={COLORS[i % COLORS.length]} radius={
+                                // Just round the edges generically or let Recharts handle default stacked rounding
+                                undefined
+                            }/>
+                        ))}
+                    </BarChart>
+                </ResponsiveContainer>
             </div>
         </div>
     )
