@@ -38,6 +38,7 @@ create table if not exists public.payment_requests (
   year            integer,
   amount          numeric(15,2) default 0,
   requested_by    text,
+  funding_source  text,
   status          text check (status in ('Pending','Approved','Rejected')) default 'Pending',
   date            date,
   synced_at       timestamptz,               -- last time synced from SharePoint
@@ -119,19 +120,24 @@ alter table public.payment_requests  enable row level security;
 alter table public.deductions        enable row level security;
 
 -- Allow anon read (public dashboard)
+drop policy if exists "Allow anon read budget_lines" on public.budget_lines;
 create policy "Allow anon read budget_lines"
   on public.budget_lines for select using (true);
 
+drop policy if exists "Allow anon read payment_requests" on public.payment_requests;
 create policy "Allow anon read payment_requests"
   on public.payment_requests for select using (true);
 
+drop policy if exists "Allow anon read deductions" on public.deductions;
 create policy "Allow anon read deductions"
   on public.deductions for select using (true);
 
 -- Allow authenticated writes (for sync service)
+drop policy if exists "Allow auth insert/update payment_requests" on public.payment_requests;
 create policy "Allow auth insert/update payment_requests"
   on public.payment_requests for all using (auth.role() = 'authenticated');
 
+drop policy if exists "Allow auth insert/update budget_lines" on public.budget_lines;
 create policy "Allow auth insert/update budget_lines"
   on public.budget_lines for all using (auth.role() = 'authenticated');
 

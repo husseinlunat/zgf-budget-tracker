@@ -1,0 +1,57 @@
+﻿Parsed 219 records from CSV
+Built 219 payment request objects
+  PR-2632: "Financial Management for Development Pro" K11225 [Comic Relief] ÔåÆ CR-001
+  PR-2639: "Monitoring visit with Stewart in Sinazon" K14350 [Comic Relief] ÔåÆ CR-001
+  PR-2868: "Pettycash replenishment - December" K5147.45 [ZGF] ÔåÆ ZG-103
+  PR-2869: "Tomcard Replenishment  - Kalulu II/Nov" K5030 [KaluluII] ÔåÆ KL-084
+  PR-2870: "Tomcard replenishment - MOTT II/Nov" K10019.21 [MOTTIII] ÔåÆ MT-054
+
+Ô£ô Wrote 219 records to src/data/seedPaymentRequests.js
+
+Syncing to Supabase...
+Ô£ô Cleared existing 2026 payment requests
+node : Batch 1 error: 
+Could not find the 
+'payee' column of 
+'payment_requests' in the 
+schema cache
+At line:1 char:1
++ node sync_payment_reques
+ts_csv.cjs > sync_log.txt 
+2>&1; echo "EXIT: $ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo        
+      : NotSpecified: (B  
+  atch 1 error: ...he s   
+ chema cache:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+Batch 2 error: Could not 
+find the 'payee' column 
+of 'payment_requests' in 
+the schema cache
+Batch 3 error: Could not 
+find the 'payee' column 
+of 'payment_requests' in 
+the schema cache
+Batch 4 error: Could not 
+find the 'payee' column 
+of 'payment_requests' in 
+the schema cache
+Batch 5 error: Could not 
+find the 'payee' column 
+of 'payment_requests' in 
+the schema cache
+
+Ô£à Done! payment_requests table now has 0 records for 2026.
+
+Summary by funding source:
+  Comic Relief: 160 requests, K 21,518,320.98
+  ZGF: 25 requests, K 1,795,526.83
+  KaluluII: 13 requests, K 471,539.04
+  MOTTIII: 21 requests, K 1,411,823.46

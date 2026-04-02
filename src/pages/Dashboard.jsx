@@ -5,9 +5,9 @@ import {
 } from 'recharts'
 import { Wallet, TrendingDown, PiggyBank, Percent, ArrowRight, Loader2 } from 'lucide-react'
 import StatCard from '../components/StatCard'
-import { useBudgetLines } from '../hooks/useBudgetLines'
+import { useComputedLines } from '../hooks/useComputedLines'
 import { usePaymentRequests } from '../hooks/usePaymentRequests'
-import { computeSummary, formatZMW } from '../data/budgetData'
+import { formatZMW } from '../data/budgetData'
 import { isSupabaseConfigured } from '../lib/supabaseClient'
 import { CheckCircle2, Clock, XCircle, Info } from 'lucide-react'
 
@@ -54,19 +54,12 @@ const renderActiveShape = (props) => {
 }
 
 export default function Dashboard({ fundingFilter }) {
+    const { filteredLines, totalBudget, totalSpent, remaining, pctUsed, loading } = useComputedLines(fundingFilter)
+    const { requests } = usePaymentRequests()
+    const filtered = filteredLines
+
     const [activePieIndex, setActivePieIndex] = useState(0)
     const [info, setInfo] = useState(null)
-    const { lines, loading: linesLoading } = useBudgetLines()
-    const { requests, loading: requestsLoading } = usePaymentRequests()
-
-    const filtered = useMemo(() =>
-        fundingFilter === 'All' ? lines : lines.filter((l) => l.fundingSource === fundingFilter),
-        [lines, fundingFilter]
-    )
-
-    const { totalBudget, totalSpent, remaining, pctUsed } = useMemo(
-        () => computeSummary(filtered), [filtered]
-    )
 
     const pillarData = useMemo(() => {
         const map = {}
@@ -74,7 +67,7 @@ export default function Dashboard({ fundingFilter }) {
             const key = PILLAR_SHORT[strategicPillar] || strategicPillar
             if (!map[key]) map[key] = { name: key, Budget: 0, Spent: 0 }
             map[key].Budget += totalCost
-            map[key].Spent += spent || 0
+            map[key].Spent += spent || 0  // now uses computed spent from requests
         })
         return Object.values(map)
     }, [filtered])
@@ -95,8 +88,6 @@ export default function Dashboard({ fundingFilter }) {
     const statusBadge = (s) =>
         s === 'Approved' ? 'badge-green' :
             s === 'Rejected' ? 'badge-red' : 'badge-amber'
-
-    const loading = linesLoading || requestsLoading
 
     return (
         <div className="p-6 space-y-6 animate-fade-in-up">

@@ -21,7 +21,7 @@ export default function PaymentRequests({ fundingFilter }) {
     const [syncResult, setSyncResult] = useState(null)
     const [info, setInfo] = useState(null)
 
-    const { requests, loading, refetch } = usePaymentRequests()
+    const { requests, loading, error, refetch } = usePaymentRequests()
     const { lines } = useBudgetLines()
     const lineMap = useMemo(() => Object.fromEntries(lines.map((l) => [l.id, l])), [lines])
 
@@ -91,12 +91,17 @@ export default function PaymentRequests({ fundingFilter }) {
                     <p className="text-xs text-primary-600/80">
                         {isSharePointConfigured
                             ? `Syncing from SharePoint list. When a request is Approved, the budget line is automatically deducted.`
-                            : `Add VITE_GRAPH_CLIENT_ID, VITE_SHAREPOINT_SITE_ID and VITE_SHAREPOINT_LIST_ID to .env.local to connect your SharePoint Payment Requests list.`
+                            : `Add VITE_GRAPH_CLIENT_ID, VITE_GRAPH_TENANT_ID, VITE_SHAREPOINT_SITE_ID and VITE_SHAREPOINT_LIST_ID to .env.local to connect your SharePoint list.`
                         }
                     </p>
                     {syncResult && (
                         <p className={`text-xs font-medium mt-1 ${syncResult.ok ? 'text-primary-700' : 'text-amber-700'}`}>
                             {syncResult.message}
+                        </p>
+                    )}
+                    {error && (
+                        <p className="text-xs font-medium mt-1 text-red-700 bg-red-100 p-2 rounded">
+                            Frontend Fetch Error: {error}
                         </p>
                     )}
                 </div>
@@ -188,18 +193,18 @@ export default function PaymentRequests({ fundingFilter }) {
                         <h3 className="text-base font-bold text-gray-900 mt-1">{info.name}</h3>
                         <div className="mt-4 space-y-2 text-sm">
                             {[
-                                ['Budget Code', info.budgetCode],
-                                ['Funding Source', info.fundingSource || '—'],
-                                ['Year', info.year],
+                                ['Budget Code', info.budgetCode || 'N/A'],
+                                ['Category', lineMap[info.budgetLineId]?.odooCategory || 'Other'],
+                                ['Funding Source', lineMap[info.budgetLineId]?.fundingSource || '—'],
                                 ['Amount', formatZMW(info.amount)],
-                                ['Requested By', info.requestedBy],
-                                ['Date', info.date],
+                                ['Requested By', info.requestedBy || 'Unknown'],
+                                ['Date', info.date || 'N/A'],
                                 ['Status', info.status],
                                 ...(info.syncedAt ? [['Last Synced', new Date(info.syncedAt).toLocaleString()]] : []),
                             ].map(([k, v]) => (
-                                <div key={k} className="flex justify-between">
-                                    <span className="text-gray-500">{k}</span>
-                                    <span className="font-medium text-gray-800">{v}</span>
+                                <div key={k} className="flex justify-between border-b border-gray-50 pb-1 last:border-0 last:pb-0">
+                                    <span className="text-gray-500 font-medium">{k}</span>
+                                    <span className="font-semibold text-gray-800 text-right">{v}</span>
                                 </div>
                             ))}
                         </div>

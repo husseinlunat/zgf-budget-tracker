@@ -8,6 +8,7 @@ import {
     ChevronLeft,
     ChevronRight,
     Building2,
+    Upload,
 } from 'lucide-react'
 
 const navItems = [
@@ -15,6 +16,7 @@ const navItems = [
     { to: '/budget-lines', label: 'Budget Lines', icon: ListOrdered },
     { to: '/payment-requests', label: 'Payment Requests', icon: ClipboardList },
     { to: '/analytics', label: 'Analytics', icon: BarChart3 },
+    { to: '/import', label: 'Import Requests', icon: Upload },
 ]
 
 export default function Sidebar({ collapsed, setCollapsed }) {

@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import { Search, Filter, ChevronRight, ArrowUpDown, Loader2 } from 'lucide-react'
 import BudgetDetailPanel from '../components/BudgetDetailPanel'
-import { useBudgetLines } from '../hooks/useBudgetLines'
+import { useComputedLines } from '../hooks/useComputedLines'
 import { usePaymentRequests } from '../hooks/usePaymentRequests'
 import { formatZMW, STRATEGIC_PILLARS } from '../data/budgetData'
 
@@ -31,12 +31,12 @@ export default function BudgetLines({ fundingFilter }) {
     const [sortDir, setSortDir] = useState('desc')
     const [selected, setSelected] = useState(null)
 
-    const { lines, loading } = useBudgetLines()
+    const { lines, loading } = useComputedLines(fundingFilter)
     const { requests } = usePaymentRequests()
 
     const filtered = useMemo(() => {
+        // lines already have computed spent/remaining from useComputedLines
         let data = lines
-        if (fundingFilter !== 'All') data = data.filter((l) => l.fundingSource === fundingFilter)
         if (pillarFilter !== 'All') data = data.filter((l) => l.strategicPillar === pillarFilter)
         if (search.trim()) data = data.filter((l) =>
             l.activity.toLowerCase().includes(search.toLowerCase()) ||
@@ -49,7 +49,7 @@ export default function BudgetLines({ fundingFilter }) {
                 ? mul * (a[sortField] - b[sortField])
                 : mul * String(a[sortField]).localeCompare(String(b[sortField]))
         })
-    }, [lines, fundingFilter, pillarFilter, search, sortField, sortDir])
+    }, [lines, pillarFilter, search, sortField, sortDir])
 
     const toggleSort = (field) => {
         if (sortField === field) setSortDir(d => d === 'asc' ? 'desc' : 'asc')

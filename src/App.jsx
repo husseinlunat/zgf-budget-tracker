@@ -6,15 +6,18 @@ import Dashboard from './pages/Dashboard'
 import BudgetLines from './pages/BudgetLines'
 import PaymentRequests from './pages/PaymentRequests'
 import Analytics from './pages/Analytics'
+import ImportRequests from './pages/ImportRequests'
 import { syncFromSharePoint } from './lib/sharepointSync'
 import { isSharePointConfigured } from './lib/sharepointSync'
 import { isSupabaseConfigured } from './lib/supabaseClient'
+import { ErrorBoundary } from './components/ErrorBoundary'
 
 const PAGE_TITLES = {
     '/': 'Dashboard',
     '/budget-lines': 'Budget Lines',
     '/payment-requests': 'Payment Requests',
     '/analytics': 'Analytics',
+    '/import': 'Import Requests',
 }
 
 function Layout() {
@@ -56,8 +59,13 @@ function Layout() {
                     <Routes>
                         <Route path="/" element={<Dashboard fundingFilter={fundingFilter} />} />
                         <Route path="/budget-lines" element={<BudgetLines fundingFilter={fundingFilter} />} />
-                        <Route path="/payment-requests" element={<PaymentRequests fundingFilter={fundingFilter} />} />
+                        <Route path="/payment-requests" element={
+                            <ErrorBoundary>
+                                <PaymentRequests fundingFilter={fundingFilter} />
+                            </ErrorBoundary>
+                        } />
                         <Route path="/analytics" element={<Analytics fundingFilter={fundingFilter} />} />
+                        <Route path="/import" element={<ImportRequests />} />
                     </Routes>
                 </main>
             </div>
